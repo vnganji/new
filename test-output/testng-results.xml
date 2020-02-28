@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Suite" duration-ms="74291" started-at="2020-02-28T04:45:42Z" finished-at="2020-02-28T04:46:56Z">
+    <groups>
+    </groups>
+    <test name="Test" duration-ms="74291" started-at="2020-02-28T04:45:42Z" finished-at="2020-02-28T04:46:56Z">
+      <class name="wells.qlearn.testcases.homePageValidation">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:wells.qlearn.testcases.homePageValidation@2a3b5b47]" name="setUp" is-config="true" duration-ms="116429" started-at="2020-02-28T04:43:45Z" finished-at="2020-02-28T04:45:42Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="testbed()[pri:0, instance:wells.qlearn.testcases.homePageValidation@2a3b5b47]" name="testbed" is-config="true" duration-ms="6" started-at="2020-02-28T04:45:42Z" finished-at="2020-02-28T04:45:42Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testbed -->
+        <test-method status="PASS" signature="verifyHomePage()[pri:1, instance:wells.qlearn.testcases.homePageValidation@2a3b5b47]" name="verifyHomePage" duration-ms="74127" started-at="2020-02-28T04:45:42Z" finished-at="2020-02-28T04:46:56Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyHomePage -->
+      </class> <!-- wells.qlearn.testcases.homePageValidation -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
+</testng-results>
