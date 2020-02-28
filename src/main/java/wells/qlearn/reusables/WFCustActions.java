@@ -48,6 +48,7 @@ public class WFCustActions {
 			//building for driver
 			System.setProperty("webdriver.chrome.driver", rootPath+"\\src\\main\\resources\\Executables\\chromedriver.exe");
 			//driver= new ChromeDriver();
+			//adding local driver
 			LocalDriver.put("chrome", new ChromeDriver());
 			
 			
