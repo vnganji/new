@@ -1,6 +1,6 @@
-# Created at 2020-02-29T04:11:28.038
+# Created at 2020-02-29T04:34:01.148
 Exiting self fork JVM. Received SHUTDOWN command from Maven shutdown hook.
-Thread dump before exiting the process (15624@DESKTOP-44FFRGA):
+Thread dump before exiting the process (15072@DESKTOP-44FFRGA):
 "Okio Watchdog" 
    java.lang.Thread.State: TIMED_WAITING
         at java.lang.Object.wait(Native Method)
@@ -17,23 +17,22 @@ Thread dump before exiting the process (15624@DESKTOP-44FFRGA):
         at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
         at java.lang.Thread.run(Thread.java:748)
 
-"UrlChecker-2" 
-   java.lang.Thread.State: TIMED_WAITING
-        at sun.misc.Unsafe.park(Native Method)
-        at java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:215)
-        at java.util.concurrent.SynchronousQueue$TransferStack.awaitFulfill(SynchronousQueue.java:460)
-        at java.util.concurrent.SynchronousQueue$TransferStack.transfer(SynchronousQueue.java:362)
-        at java.util.concurrent.SynchronousQueue.poll(SynchronousQueue.java:941)
-        at java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1073)
-        at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1134)
-        at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
-        at java.lang.Thread.run(Thread.java:748)
-
 "Exec Stream Pumper" 
    java.lang.Thread.State: RUNNABLE
-        at java.io.FileInputStream.readBytes(Native Method)
-        at java.io.FileInputStream.read(FileInputStream.java:233)
-        at org.apache.commons.exec.StreamPumper.run(StreamPumper.java:107)
+        at java.lang.ThreadLocal$ThreadLocalMap.<init>(ThreadLocal.java:366)
+        at java.lang.ThreadLocal.createMap(ThreadLocal.java:244)
+        at java.lang.ThreadLocal.setInitialValue(ThreadLocal.java:186)
+        at java.lang.ThreadLocal.get(ThreadLocal.java:170)
+        at java.lang.StringCoding.deref(StringCoding.java:63)
+        at java.lang.StringCoding.decode(StringCoding.java:179)
+        at java.lang.StringCoding.decode(StringCoding.java:254)
+        at java.lang.String.<init>(String.java:546)
+        at org.apache.maven.surefire.report.ConsoleOutputCapture$ForwardingPrintStream.write(ConsoleOutputCapture.java:57)
+        at org.apache.maven.surefire.report.ConsoleOutputCapture$ForwardingPrintStream.write(ConsoleOutputCapture.java:64)
+        at org.apache.maven.surefire.report.ConsoleOutputCapture$ForwardingPrintStream.write(ConsoleOutputCapture.java:72)
+        at org.openqa.selenium.io.MultiOutputStream.write(MultiOutputStream.java:40)
+        at java.io.OutputStream.write(OutputStream.java:116)
+        at org.apache.commons.exec.StreamPumper.run(StreamPumper.java:108)
         at java.lang.Thread.run(Thread.java:748)
 
 "Exec Stream Pumper" 
@@ -45,6 +44,18 @@ Thread dump before exiting the process (15624@DESKTOP-44FFRGA):
         at java.io.BufferedInputStream.read(BufferedInputStream.java:345)
         at java.io.FilterInputStream.read(FilterInputStream.java:107)
         at org.apache.commons.exec.StreamPumper.run(StreamPumper.java:107)
+        at java.lang.Thread.run(Thread.java:748)
+
+"UrlChecker-2" 
+   java.lang.Thread.State: TIMED_WAITING
+        at sun.misc.Unsafe.park(Native Method)
+        at java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:215)
+        at java.util.concurrent.SynchronousQueue$TransferStack.awaitFulfill(SynchronousQueue.java:460)
+        at java.util.concurrent.SynchronousQueue$TransferStack.transfer(SynchronousQueue.java:362)
+        at java.util.concurrent.SynchronousQueue.poll(SynchronousQueue.java:941)
+        at java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1073)
+        at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1134)
+        at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
         at java.lang.Thread.run(Thread.java:748)
 
 "Exec Default Executor" 
