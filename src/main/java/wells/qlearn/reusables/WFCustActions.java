@@ -27,8 +27,8 @@ public class WFCustActions {
 	public static String rootPath = System.getProperty("user.dir");
 	public static Properties prop = new Properties();
 	
-	public Map<String,RemoteWebDriver> RemoteDriver = new HashMap<String,RemoteWebDriver>();
-	public Map<String,WebDriver> LocalDriver = new HashMap<String,WebDriver>();
+	public static Map<String,RemoteWebDriver> RemoteDriver = new HashMap<String,RemoteWebDriver>();
+	public static Map<String,WebDriver> LocalDriver = new HashMap<String,WebDriver>();
 	
 	public void setPropertiesfile() throws IOException{
 		FileInputStream file = new FileInputStream(rootPath+"\\src\\main\\resources\\Properties\\config.properties");
@@ -46,7 +46,8 @@ public class WFCustActions {
 			//driver = new RemoteWebDriver(new URL(prop.getProperty("gridClient")),dc);
 			RemoteDriver.put("chrome", (new RemoteWebDriver(new URL(prop.getProperty("gridClient")),dc)));*/
 			//building for driver
-			System.setProperty("webdriver.chrome.driver", rootPath+"\\src\\main\\resources\\Executables\\chromedriver.exe");
+			//System.setProperty("webdriver.chrome.driver", rootPath+"\\src\\main\\resources\\Executables\\chromedriver.exe");
+			System.setProperty("webdriver.chrome.driver","C:\\Users\\ADMIN\\Jars2020\\chromedriver_win3\\chromedriver.exe");
 			//driver= new ChromeDriver();
 			//adding local driver
 			LocalDriver.put("chrome", new ChromeDriver());
