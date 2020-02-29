@@ -47,7 +47,7 @@ public class WFCustActions {
 			RemoteDriver.put("chrome", (new RemoteWebDriver(new URL(prop.getProperty("gridClient")),dc)));*/
 			//building for driver
 			//System.setProperty("webdriver.chrome.driver", rootPath+"\\src\\main\\resources\\Executables\\chromedriver.exe");
-			System.setProperty("webdriver.chrome.driver","C:\\Users\\ADMIN\\Jars2020\\chromedriver_win3\\chromedriver.exe");
+			System.setProperty("webdriver.chrome.driver","C:\\Users\\ADMIN\\Jars2020\\chromedriver_win32\\chromedriver.exe");
 			//driver= new ChromeDriver();
 			//adding local driver
 			LocalDriver.put("chrome", new ChromeDriver());
